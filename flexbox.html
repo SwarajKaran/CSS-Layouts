@@ -10,6 +10,7 @@
         background-color: blueviolet;
         align-self: flex-start;
         /* order: 2; */
+        /* flex-grow: 2; */
       }
       .el--2 {
         background-color: orangered;
@@ -17,6 +18,7 @@
       .el--3 {
         background-color: green;
         height: 150px;
+        /* flex-grow: 1; */
       }
       .el--4 {
         background-color: goldenrod;
@@ -50,6 +52,20 @@
         justify-content: flex-start;
         gap: 30px;
       }
+      .el {
+        /* 
+        defaults 
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto;
+        */
+        /* flex-basis: 200px;
+        flex-shrink: 0;
+        shorthand:
+         flex: 0 0 200px; */
+        /* flex-grow: 1; */
+        flex: 1;
+      }
     </style>
   </head>
   <body>
@@ -59,9 +75,9 @@
       <div class="el el--3">CSS</div>
       <div class="el el--4">are</div>
       <div class="el el--5">amazing</div>
-      <div class="el el--6">languages</div>
+      <!-- <div class="el el--6">languages</div>
       <div class="el el--7">to</div>
-      <div class="el el--8">learn</div>
+      <div class="el el--8">learn</div> -->
     </div>
   </body>
 </html>
