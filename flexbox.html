@@ -8,6 +8,8 @@
     <style>
       .el--1 {
         background-color: blueviolet;
+        align-self: flex-start;
+        /* order: 2; */
       }
       .el--2 {
         background-color: orangered;
@@ -21,9 +23,12 @@
       }
       .el--5 {
         background-color: palevioletred;
+        align-self: stretch;
+        order: 1;
       }
       .el--6 {
         background-color: steelblue;
+        order: -1;
       }
       .el--7 {
         background-color: yellow;
@@ -42,7 +47,8 @@
         /* FLEXBOX */
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: flex-start;
+        gap: 30px;
       }
     </style>
   </head>
